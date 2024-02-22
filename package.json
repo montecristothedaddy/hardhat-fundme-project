@@ -1,0 +1,36 @@
+{
+  "name": "hardhat-fundme-project",
+  "author": "monte cristo",
+  "version": "0.1.0",
+     "devDependencies": {
+        "@chainlink/contracts": "^0.8.0",
+        "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+        "@nomicfoundation/hardhat-ethers": "^3.0.0",
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+        "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+        "@nomicfoundation/hardhat-verify": "^2.0.0",
+        "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+        "@typechain/ethers-v6": "^0.5.0",
+        "@typechain/hardhat": "^9.0.0",
+        "chai": "^4.2.0",
+        "chainlink": "^0.8.2",
+        "ethers": "^6.11.0",
+        "hardhat": "^2.19.5",
+        "hardhat-deploy": "^0.11.45",
+        "hardhat-gas-reporter": "^1.0.8",
+        "solhint": "^4.1.1",
+        "solidity-coverage": "^0.8.0",
+        "typechain": "^8.3.0"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.1"
+    },
+    "scripts": {
+        "test": "yarn hardhat test",
+        "test:staging": "yarn hardhat test --network sepolia",
+        "lint": "yarn solhint 'contracts/*.sol'",
+        "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
+        "format": "yarn prettier --write",
+        "coverage": "yarn hardhat coverage"
+    }
+}
